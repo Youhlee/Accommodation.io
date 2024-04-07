@@ -1,0 +1,175 @@
+/*Reset na página / Reset on page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Adicionando a fonte Bungee /  Adding the font Bungee to our project */
+header,
+section h2,
+section h3,
+form button {
+  font-family: "Bungee", cursive;
+}
+
+/*Adicionando a fonte Roboto /  Adding the font Roboto to our project */
+body,
+input,
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Cabeçalho da  página / Page header*/
+header {
+  padding: 16px 0; /*Espaçamento interno de 16px na parte de cima em embaixo e 0 nas laterais / Internal spacing of 16px at the top and bottom and 0 on the sides*/
+  background-color: #1fb833; /*Cor de fundo do cabeçalho / Header color background*/
+  color: #ecf0f1; /*Cor do texto do cabeçalho / Text color of the header*/
+}
+
+/*Ajustando o peso do texto para que fique mais legível / Adjusting the weight of the text so it is more readable*/
+header h1,
+section h2,
+section h3 {
+  font-weight: Normal; /*Fonte normal para o título / Regular weight for the title*/
+}
+
+/*Listas da navegação do  cabeçalho / Navigation list in the header*/
+header nav li {
+  display: inline; /*Exibe os itens na mesma linha /  Display items in the same line*/
+  margin-left: 16px; /*Espaço externo entre os itens da lista / External space between list items*/
+  font-size: 18px; /*Tamanho da fonte dos itens da lista / Font size of list items*/
+}
+
+/*Links das listas de navegação / Links from navigation lists*/
+header nav li a {
+  color: #ecf0f1; /*Cor do texto dos links / Link text color*/
+  text-decoration: none; /*Remover underline dos links / Remove underlines from links*/
+}
+
+header nav li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/*Contêiner criado para centralizar conteúdo do cabeçalho / Container created to center content of the header*/
+.container {
+  max-width: 1280px; /*Largura máxima da área do conteúdo / Maximum width of the content area*/
+  width: 100%; /*Ajustar largura para o tamanho total do dispositivo / Adjust width to full device size*/
+  margin: 0 auto; /*Centralizar o topo como 0 e laterais como automático do conteúdo no eixo horizontal / Center top as 0 and sides automatically according*/
+}
+
+/*Colocando título e navegação lado a lado / Placing title and navigation side by side*/
+/*Aplicando a mesma regra a section / Applying the same rule to the section*/
+header .container,
+section .container {
+  display: flex; /*Define como um elemento flexível, permitindo alinhamento / Defines as elements*/
+  align-items: center; /*Centraliza verticalmente os elementos filhos / Vertically centers the child elements*/
+  justify-content: space-between; /*Alinhamento horizontal (espaços entre os elementos)  / Horizontal alignment (spaces between the elements)*/
+}
+
+/*Configurando tamanho das imagens / Setting image sizes*/
+.brands-list img,
+.social-links img {
+  height: 24px; /*Altura máxima das imagens / Maximum image height*/
+}
+
+/*Alinhando a lista de imagens / Aligning the images list*/
+.brands-list li,
+.social-links li {
+  display: inline; /*Exibe os itens na mesma linha /  Display items in the same line*/
+  margin-right: 8px; /*Espaço externo entre os itens da lista / External space between list items*/
+}
+
+/*Ajeitando o alinhamento da section / Adjusting alignment for the section*/
+section .container {
+  align-items: flex-start;
+}
+
+/*Adicionando espaçamento entre o header e a section / Adding spacing between the header and section*/
+section {
+  padding: 24px 0; /*Espaçamento interno em cima e embaixo de 24px e 0 aos lados / Internal spacing at the top and bottom of 24px and 0 at the sides*/
+}
+
+/*Colocando espaçamento no h2 da section / Adding space around the h2 heading of the section*/
+section h2 {
+  margin-bottom: 16px; /*Espaço externo entre os itens da lista / External space between list items*/
+}
+
+/*Adicinando cor para todos os textos da section / Adding color to all texts in the section*/
+section {
+  color: #1fb833;
+}
+
+/*Colocando espaçamento no p da section  / Adding space around the paragraphs of the section*/
+section p {
+  margin-bottom: 8px; /*Espaço externo entre os itens da lista / External space between list items*/
+}
+
+/*Colocando espaçamento entre a imagem e o contéudo ao lado dela / Adding space between the image and its content on the side*/
+.accommodation-front {
+  margin-right: 32px; /*Espaço externo entre os itens da lista / External space between list items*/
+}
+
+.social-links li a {
+  text-decoration: none;
+}
+
+/*Organizando contatos, todos em bloco um abaixo do outro  / Organizing contacts, all on one line below each other*/
+#contact .container {
+  display: block; /*Tornando o container um bloco, para que possa ser posicionado relativamente em relação ao seu pai / Making the container a block, so it can be positioned relatively to its parent*/
+}
+
+/*Organizando as divs uma ao lado da outra  / Placing the divs side by side*/
+.contact-methods {
+  display: flex; /* Define como os itens devem ser exibidos um ao lado do outro  / Defines how items should be displayed one next*/
+  justify-content: space-between; /*Alinhamento horizontal (espaços entre os elementos)  / Horizontal alignment (spaces between the elements)*/
+}
+
+/*Estilizando os forms de contato / Styling the contact form*/
+form input,
+form textarea,
+form button {
+  display: block; /*Tornando o container um bloco, para que possa ser posicionado relativamente em relação ao seu pai / Making the container a block, so it can be positioned relatively to its parent*/
+  width: 320px; /*Definindo largura fixa / Fixing the width*/
+  margin-bottom: 8px; /*Espaçamento externo em baixo dos campos de entrada / External space below the input fields*/
+  padding: 8px; /*Espaço interno nos inputs / Inner space in the inputs*/
+}
+
+/*Desabilitando redimensionamento do textarea / Disabling resizing of the textarea*/
+textarea {
+  resize: none;
+  height: 180px;
+}
+
+/*Adicionando mais espaço externo abaixo do título / Adding more external space below the title*/
+section h3 {
+  margin-bottom: 16px; /*Mais espaço abaixo do titulo / More space below the title*/
+}
+
+/*Estilizando o botão / Styling the button*/
+form button {
+  background-color: #1fb833; /*Cor de fundo do botão / Button color*/
+  color: #fff; /*Cor do texto do botão / Text color*/
+  border: none; /*Sem borda / No border*/
+  cursor: pointer; /*Cursor para indicar interação / Indicates interaction*/
+}
+
+/*Estilizando quando o mouse passa pro cima do botão / Styling when the mouse goes over the button*/
+form button:hover {
+  background-color: #88d693; /*Mudança de cor quando o mouse é passado por cima / Color change when the mouse is over*/
+}
+
+/*Alterando a borda quando clicado nos inputs e textarea / Changing the border when clicked on the inputs and textarea*/
+input:focus,
+textarea:focus {
+  outline-color: #1fb833; /*Cor da linha de foco / Focus line color*/
+}
+
+/*Estilizando o footer e alinhando ao centro da página / Styling the footer and aligning it to center of the page*/
+footer {
+  background-color: #1fb833; /*Cor de fundo do rodapé / Footer background color */
+  color: #ecf0f1; /*Cor do texto do rodapé / Footer text color*/
+  padding: 16px 0; /* Espaçamento vertical entre as linhas do rodapé / Vertical spacing between footer lines*/
+  text-align: center; /*Alinhado ao centro / Center aligned*/
+}
